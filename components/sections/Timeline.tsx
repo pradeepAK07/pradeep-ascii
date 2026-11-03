@@ -16,7 +16,7 @@ export function Timeline() {
         <div className="absolute left-[7px] top-2 bottom-2 w-px border-l border-dotted border-dim" />
         <div className="space-y-10">
           {site.timeline.map((r, i) => (
-            <Reveal key={r.company} delay={i * 0.08}>
+            <Reveal key={`${r.company}-${r.period}`} delay={i * 0.08}>
               <div className="relative pl-8">
                 <span className="absolute left-0 top-2 w-[15px] h-[15px] flex items-center justify-center text-acid text-[10px] bg-paper">
                   ◆
