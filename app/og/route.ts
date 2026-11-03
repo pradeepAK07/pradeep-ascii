@@ -4,7 +4,7 @@ export function GET() {
   const svg = bannerSvg("PRADEEP", {
     color: ["#c6f24e", "#7bd1ff"],
     shadow: "rounded",
-    tagline: "frontend developer · react · next.js · typescript",
+    tagline: "frontend engineer · react · next.js · typescript",
   });
   return new Response(svg, {
     headers: {

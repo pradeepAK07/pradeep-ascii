@@ -91,7 +91,6 @@ export function Contact() {
 
       <Reveal delay={0.1}>
         <div className="mt-14 pt-6 border-t border-dotted border-dim flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-[11px] text-dim">
-          <div>built with next.js, motion, lenis, and ascii.rest</div>
           <div className="flex flex-wrap gap-x-4 gap-y-1">
             <span>jetbrains mono · 2026</span>
             <span>© pradeep a</span>

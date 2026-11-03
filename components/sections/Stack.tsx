@@ -1,4 +1,4 @@
-import { Ascii, type PieceName } from "ascii.rest/react";
+import { Ascii, Banner, type PieceName } from "ascii.rest/react";
 import { site } from "@/content/site";
 import { Reveal } from "@/components/motion/Reveal";
 import { AsciiMarquee } from "@/components/ascii/AsciiMarquee";
@@ -19,8 +19,25 @@ export function Stack() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {site.stack.logos.map((name) => (
               <div key={name} className="card p-4 flex flex-col items-center gap-3">
-                <Ascii piece={name as PieceName} style={{ width: 96 }} label={name} />
-                <span className="text-[11px] text-mute">{name}</span>
+                <div className="flex h-[96px] items-center justify-center">
+                  {name === "node" ? (
+                    <Banner
+                      text="node"
+                      label="node.js"
+                      font="slim"
+                      pixel={1}
+                      gap={1}
+                      shadow="none"
+                      effect="glint"
+                      mono
+                      className="art"
+                      style={{ fontSize: 10, color: "var(--acid)", opacity: 0.55 }}
+                    />
+                  ) : (
+                    <Ascii piece={name as PieceName} style={{ width: 96 }} label={name} />
+                  )}
+                </div>
+                <span className="text-[11px] text-mute">{name === "node" ? "node.js" : name}</span>
               </div>
             ))}
           </div>
@@ -38,7 +55,7 @@ export function Stack() {
       </div>
 
       <div className="mt-16">
-        <AsciiMarquee items={[...site.stack.skills, ...site.stack.logos]} />
+        <AsciiMarquee items={[...site.stack.skills, ...site.stack.logos.map((l) => (l === "node" ? "node.js" : l))]} />
       </div>
     </section>
   );

@@ -4,6 +4,7 @@ export type Project = {
   year: string;
   tags: string[];
   href: string;
+  preview: string;
   status: "shipped" | "wip" | "archived";
 };
 
@@ -24,9 +25,9 @@ export type Education = {
 export const site = {
   name: "Pradeep A",
   handle: "pradeep",
-  role: "Frontend Developer",
+  role: "Frontend Engineer",
   tagline:
-    "Frontend developer with 4.5+ years building performant React and Next.js products — real-time platforms, AI document tooling, and Web3 marketplaces.",
+    "Frontend engineer with 4.5+ years building performant React and Next.js products — real-time platforms, AI document tooling, and Web3 marketplaces.",
   status: "available for work",
   email: "pradeep.arunachalamani@gmail.com",
   location: "Chennai, IN",
@@ -48,6 +49,7 @@ export const site = {
       year: "2026",
       tags: ["next.js", "aws chime", "aws ivs", "websockets"],
       href: "https://pradeep-dev-portfolio-self.vercel.app/experience",
+      preview: "equalizer",
       status: "shipped",
     },
     {
@@ -57,6 +59,7 @@ export const site = {
       year: "2025",
       tags: ["react", "micro-frontend", "onlyoffice"],
       href: "https://pradeep-dev-portfolio-self.vercel.app/experience",
+      preview: "file-tree",
       status: "shipped",
     },
     {
@@ -66,6 +69,7 @@ export const site = {
       year: "2024",
       tags: ["next.js", "cardano", "web3"],
       href: "https://pradeep-dev-portfolio-self.vercel.app/experience",
+      preview: "icosahedron",
       status: "shipped",
     },
     {
@@ -75,14 +79,15 @@ export const site = {
       year: "2023",
       tags: ["react", "ant design", "rest"],
       href: "https://pradeep-dev-portfolio-self.vercel.app/experience",
+      preview: "split-flap",
       status: "archived",
     },
   ] satisfies Project[],
   stack: {
-    logos: ["typescript", "javascript", "python", "html", "css", "vercel", "supabase"],
+    logos: ["typescript", "javascript", "node", "html", "css", "vercel", "supabase"],
     skills: [
       "react", "next.js", "typescript", "javascript (es6+)", "graphql", "apollo",
-      "rest apis", "node.js", "python", "redux toolkit", "react query", "ant design",
+      "rest apis", "node.js", "redux toolkit", "react query", "ant design",
       "tailwindcss", "styled components", "postgres", "webpack", "jest", "playwright",
       "aws", "firebase", "github", "bitbucket",
     ],
@@ -90,7 +95,7 @@ export const site = {
   timeline: [
     {
       company: "Tringapps Research Labs",
-      role: "Frontend Developer",
+      role: "Frontend Engineer",
       period: "Mar 2026 — Nov 2026",
       client: "KatonMeet · Real-time meeting & streaming",
       points: [
@@ -101,7 +106,7 @@ export const site = {
     },
     {
       company: "Tringapps Research Labs",
-      role: "Frontend Developer",
+      role: "Frontend Engineer",
       period: "Oct 2024 — Mar 2026",
       client: "DocGen AI · Document generation platform",
       points: [
@@ -112,7 +117,7 @@ export const site = {
     },
     {
       company: "Tringapps Research Labs",
-      role: "Frontend Developer",
+      role: "Frontend Engineer",
       period: "Aug 2023 — Oct 2024",
       client: "RFLXT · Web3 gaming & NFT marketplace",
       points: [
@@ -123,7 +128,7 @@ export const site = {
     },
     {
       company: "Atos",
-      role: "Frontend Developer",
+      role: "Frontend Engineer",
       period: "Dec 2021 — Jun 2023",
       client: "Network Rail · Enterprise CRM",
       points: [
