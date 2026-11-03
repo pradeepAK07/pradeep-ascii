@@ -11,11 +11,11 @@ const mono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000"),
-  title: "Pradeep A — Frontend Developer",
+  title: "Pradeep A — Frontend Engineer",
   description:
-    "Frontend developer with 4.5+ years building performant React and Next.js products — real-time platforms, AI document tooling, and Web3 marketplaces.",
+    "Frontend engineer with 4.5+ years building performant React and Next.js products — real-time platforms, AI document tooling, and Web3 marketplaces.",
   openGraph: {
-    title: "Pradeep A — Frontend Developer",
+    title: "Pradeep A — Frontend Engineer",
     description: "React, Next.js, and TypeScript — real-time platforms, AI tooling, and Web3.",
     type: "website",
     images: [{ url: "/og", width: 1200, height: 630 }],

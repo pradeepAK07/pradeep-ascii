@@ -4,8 +4,6 @@ import { site } from "@/content/site";
 import { Reveal } from "@/components/motion/Reveal";
 import { motion } from "motion/react";
 
-const scenes = ["prism-city", "command-city", "volcano-night", "marine-drive"];
-
 export function Work() {
   return (
     <section id="work" className="mx-auto max-w-[1180px] px-5 py-24">
@@ -26,20 +24,22 @@ export function Work() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-5%" }}
             transition={{ duration: 0.6, delay: i * 0.05 }}
-            className="card grid lg:grid-cols-[260px_1fr] gap-0 overflow-hidden lg:sticky"
+            className="card grid lg:grid-cols-[420px_1fr] gap-0 overflow-hidden lg:sticky"
             style={{ top: `${96 + i * 8}px` }}
           >
-            <div className="relative bg-panel/60 border-b lg:border-b-0 lg:border-r border-dotted border-dim p-4">
-              <div className="text-[10px] text-mute mb-2 flex justify-between">
+            <div className="relative flex flex-col bg-panel/60 border-b lg:border-b-0 lg:border-r border-dotted border-dim p-4">
+              <div className="text-[10px] text-mute mb-3 flex justify-between">
                 <span>preview.ascii</span>
                 <span>{p.year}</span>
               </div>
-              <Ascii
-                piece={scenes[i % scenes.length] as PieceName}
-                style={{ width: "100%" }}
-                options={{ fps: 6 }}
-                label={p.name}
-              />
+              <div className="flex flex-1 items-center justify-center min-h-[220px]">
+                <Ascii
+                  piece={p.preview as PieceName}
+                  className="art work-art"
+                  options={{ fps: 6 }}
+                  label={p.name}
+                />
+              </div>
             </div>
             <div className="p-6 flex flex-col justify-between gap-6">
               <div>
@@ -57,14 +57,6 @@ export function Work() {
                     {t}
                   </span>
                 ))}
-                <a
-                  href={p.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="ml-auto text-[11px] text-mute hover:text-acid transition-colors"
-                >
-                  [ open ↗ ]
-                </a>
               </div>
             </div>
           </motion.article>

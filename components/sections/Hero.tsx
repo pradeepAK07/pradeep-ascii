@@ -70,7 +70,7 @@ export function Hero() {
         <div className="mt-16">
           <AsciiMarquee
             items={[
-              "frontend developer",
+              "frontend engineer",
               "react · next.js · typescript",
               "real-time · ai tooling · web3",
               "4.5+ years shipping products",
