@@ -74,7 +74,7 @@ body::before {
 /* ascii art rules from ascii.rest */
 .art {
   margin: 0;
-  font-family: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-family: "ascii.rest mono", var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
   font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0;
@@ -102,6 +102,11 @@ pre.art::-webkit-scrollbar {
     font-size: 9px;
     line-height: 1.15;
   }
+}
+
+/* about: the cat piece is 56 columns — size it so the whole cat fits the avatar card */
+.about-cat {
+  font-size: 9px;
 }
 
 /* work previews: sized to fit the card's preview panel */
@@ -233,6 +238,12 @@ a.bracket::after { content: "]"; color: var(--mute); }
   transition: border-color .2s ease, background .2s ease;
 }
 .card:hover { border-color: var(--acid); background: color-mix(in srgb, var(--panel) 75%, transparent); }
+
+/* work cards stack on scroll — opaque so text never bleeds through */
+.work-card,
+.work-card:hover {
+  background: var(--panel);
+}
 
 /* lenis */
 html.lenis,

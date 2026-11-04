@@ -14,7 +14,7 @@ export function About() {
         </div>
       </Reveal>
 
-      <div className="grid lg:grid-cols-[1fr_320px] gap-10 items-start">
+      <div className="grid lg:grid-cols-[1fr_340px] gap-10 items-start">
         <Reveal>
           <AsciiWindow title="pradeep@portfolio: ~">
             <div className="text-[12px] leading-7">
@@ -42,7 +42,7 @@ export function About() {
         <Reveal delay={0.15}>
           <div className="card p-4">
             <div className="text-[10px] text-mute mb-3">avatar.ascii</div>
-            <Ascii piece="cat" style={{ width: "100%" }} label="a sleeping cat" className="art" />
+            <Ascii piece="cat" style={{ width: "100%" }} label="a sleeping cat" className="art about-cat" />
             <div className="mt-3 text-[11px] text-mute flex justify-between">
               <span>{site.name}</span>
               <span>{site.location}</span>
