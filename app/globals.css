@@ -74,7 +74,7 @@ body::before {
 /* ascii art rules from ascii.rest */
 .art {
   margin: 0;
-  font-family: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-family: "ascii.rest mono", var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
   font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0;

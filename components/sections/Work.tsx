@@ -24,7 +24,7 @@ export function Work() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-5%" }}
             transition={{ duration: 0.6, delay: i * 0.05 }}
-            className="card work-card grid lg:grid-cols-[420px_1fr] gap-0 overflow-hidden lg:sticky"
+            className="card work-card grid lg:grid-cols-[420px_1fr] gap-0 overflow-hidden lg:sticky lg:min-h-[340px]"
             style={{ top: `${96 + i * 8}px` }}
           >
             <div className="relative flex flex-col bg-panel/60 border-b lg:border-b-0 lg:border-r border-dotted border-dim p-4">
