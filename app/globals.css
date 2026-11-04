@@ -234,6 +234,12 @@ a.bracket::after { content: "]"; color: var(--mute); }
 }
 .card:hover { border-color: var(--acid); background: color-mix(in srgb, var(--panel) 75%, transparent); }
 
+/* work cards stack on scroll — opaque so text never bleeds through */
+.work-card,
+.work-card:hover {
+  background: var(--panel);
+}
+
 /* lenis */
 html.lenis,
 html.lenis body {
