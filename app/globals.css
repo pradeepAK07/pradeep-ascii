@@ -104,6 +104,11 @@ pre.art::-webkit-scrollbar {
   }
 }
 
+/* about: the cat piece is 56 columns — size it so the whole cat fits the avatar card */
+.about-cat {
+  font-size: 9px;
+}
+
 /* work previews: sized to fit the card's preview panel */
 .work-art {
   font-size: 10px;
